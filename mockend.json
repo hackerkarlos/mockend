@@ -1,5 +1,14 @@
 {
-    "Course": {
-      "Personal Finance": { "Exercise": {"name": "1"} }
+    "Post": {
+      "title": { "string": {} },
+      "comments": {
+        "hasMany": "Comment"
+      }
+    },
+    "Comment": {
+      "body": { "string": {} },
+      "post": {
+        "belongsTo": "Post"
+      }
     }
   }
