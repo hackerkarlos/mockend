@@ -4,11 +4,9 @@
       "description": { "loremWords": { "minLength": 5, "maxLength": 20 }},
       "author": [{ 
         "user":{
-          "int": {"min": 1, "max": 2}
-      },"firstName":{
-        "string": ["Jens", "Benny", "John", "Vinnie"]
-      },"lastName":{
-        "string": ["Werner", "Bent", "Mogens", "Pilfinger"]}
+          "int": {"min": 1, "max": 2},
+          "firstName":{"string": ["Jens", "Benny", "John", "Vinnie"]},
+          "lastName":{"string": ["Werner", "Bent", "Mogens", "Pilfinger"]}}
       }],
       "coverImg": { "string": "https://random.imagecdn.app/v1/image?width=500&height=150"},
       "published": {"boolean": true},
@@ -16,7 +14,7 @@
       "sections": [{
         "sectionNumber": { "int": {"min": 1, "max": 10}},
         "title": ["Personal Finance", "Health", "Personal Hygiene", "Food"],
-        "description": "",
+        "description": {"loremWords": { "minLength": 5, "maxLength": 20 }} ,
         "exercises": [{
           "exerciseNumber": { "int": {"min": 1, "max": 10}},
           "content": {
@@ -32,7 +30,7 @@
             "text": {"loremWords": { "minLength": 5, "maxLength": 20 }},
             "correct": { "isPublished": { "boolean": {} } }
             }
-      }],
+          }],
         "createdAt": {
           "dateTime": {
             "min": "2010-01-01T00:00:00Z",
