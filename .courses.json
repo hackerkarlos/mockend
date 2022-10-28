@@ -1,0 +1,54 @@
+{
+    "Post": {
+      "title": { "string": ["Personal Finance", "Health", "Personal Hygiene", "Food"] },
+      "description": { "loremWords": { "minLength": 5, "maxLength": 20 }},
+      "author": { 
+        "user":{
+          "int": {"min": 1, "max": 2}
+      },"firstName":{
+        "string": ["Jens", "Benny", "John", "Vinnie"]
+      },"lastName":{
+        "string": ["Werner", "Bent", "Mogens", "Pilfinger"]
+
+      }
+
+      },
+      "coverImg": "https://random.imagecdn.app/v1/image?width=500&height=150",
+      "published": true,
+      "category": { "int": {"min": 1, "max": 10}},
+      "sections": [{
+        "sectionNumber": { "int": {"min": 1, "max": 10}},
+        "title": ["Personal Finance", "Health", "Personal Hygiene", "Food"],
+        "description": "",
+        "exercises": [{
+          "exerciseNumber": { "int": {"min": 1, "max": 10}},
+          "content": {
+            "type": {"string": "video"},
+            "url": {"string": "https://www.youtube.com/watch?v=C0DPdy98e4c"}
+          },
+          "on_wrong_feedback": {
+            "type": {"string": "video"},
+            "url": {"string": "https://www.youtube.com/watch?v=C0DPdy98e4c"}
+          },
+          "answers": {
+            "answerNumber": {"int": {"min": 1, "max": 10}},
+            "text": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+            "correct": { "isPublished": { "boolean": {} } }
+            }
+      }],
+        "createdAt": {
+          "dateTime": {
+            "min": "2010-01-01T00:00:00Z",
+            "max": "2020-12-31T23:59:59Z"
+          }
+        }
+    }],
+    "createdAt": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+
+    }
+  }
+}
