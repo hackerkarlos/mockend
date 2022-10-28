@@ -2,11 +2,13 @@
     "Post": {
       "title": { "string": ["Personal Finance", "Health", "Personal Hygiene", "Food"] },
       "description": { "loremWords": { "minLength": 5, "maxLength": 20 }},
-      "author": [{
-        "userId":{"int": {"min": 1, "max": 2}},
-        "firstName": {"string": ["Jens", "Benny", "John", "Vinnie"]},
-        "lastName": {"string": ["Werner", "Bent", "Mogens", "Pilfinger"]}
-      }],
+      "author": {
+        "author":{
+          "userId":{"int": {"min": 1, "max": 100}},
+          "firstName": {"string": ["Jens", "Benny", "John", "Vinnie"]},
+          "lastName": {"string": ["Werner", "Bent", "Mogens", "Pilfinger"]}
+        }
+      },
       "coverImg": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
       },
       "published": {"boolean": true},
