@@ -8,9 +8,8 @@
           "firstName": {"string": ["Jens", "Benny", "John", "Vinnie"]},
           "lastName": {"string": ["Werner", "Bent", "Mogens", "Pilfinger"]}}
       }],
-      "coverImg": { 
-        "photo": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
-      }},
+      "coverImg": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
+      },
       "published": {"boolean": true},
       "category": { "int": {"min": 1, "max": 10}},
       "sections": [{
