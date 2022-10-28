@@ -8,15 +8,12 @@
       },"firstName":{
         "string": ["Jens", "Benny", "John", "Vinnie"]
       },"lastName":{
-        "string": ["Werner", "Bent", "Mogens", "Pilfinger"]
-
-      }
-
+        "string": ["Werner", "Bent", "Mogens", "Pilfinger"]}
       },
-      "coverImg": "https://random.imagecdn.app/v1/image?width=500&height=150",
-      "published": true,
+      "coverImg": { "string": "https://random.imagecdn.app/v1/image?width=500&height=150"},
+      "published": {"boolean": true},
       "category": { "int": {"min": 1, "max": 10}},
-      "sections": [{
+      "sections": {
         "sectionNumber": { "int": {"min": 1, "max": 10}},
         "title": ["Personal Finance", "Health", "Personal Hygiene", "Food"],
         "description": "",
@@ -42,7 +39,7 @@
             "max": "2020-12-31T23:59:59Z"
           }
         }
-    }],
+    },
     "createdAt": {
       "dateTime": {
         "min": "2010-01-01T00:00:00Z",
