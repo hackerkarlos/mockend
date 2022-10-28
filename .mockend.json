@@ -8,7 +8,7 @@
           "firstName": {"string": ["Jens", "Benny", "John", "Vinnie"]},
           "lastName": {"string": ["Werner", "Bent", "Mogens", "Pilfinger"]}}
       }],
-      "coverImg": {"string": "https://random.imagecdn.app/v1/image?width=500&height=150"},
+      "coverImg": {"url": {"string": "https://random.imagecdn.app/v1/image?width=500&height=150"}},
       "published": {"boolean": true},
       "category": { "int": {"min": 1, "max": 10}},
       "sections": [{
